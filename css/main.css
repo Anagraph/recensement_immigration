@@ -1,0 +1,290 @@
+h5{
+  font-weight: bold;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid white !important;
+    margin: 1em 0;
+    padding: 0;
+}
+/***************************************/
+#map {
+    position:absolute;
+    z-index: 1;
+    top:0;
+    width:100%;
+    height: 100%;
+}
+
+#miniMap {
+
+    height: 150px;
+    width: 100%;
+
+}
+
+.leaflet-container {
+    background-color:rgba(192,192,192,0.3);
+}
+
+
+/****************SOCIALS***********************/
+
+#socials{
+    position: absolute;
+    bottom:5%;
+    left:5%;
+    z-index: 999;
+
+}
+/******************LEGEND*********************/
+
+
+#legend{
+  position:fixed;
+  z-index: 1;
+  right: 1%;
+  bottom:4%;
+  overflow-y: auto;
+  width: 340px !important;
+}
+
+#actionButtons{
+  margin:auto;
+  width: 100%;
+  background-color: rgba(255,192,192,0);
+}
+
+.btn {
+  border-radius: 0;
+  border-width: 0;
+  margin:auto;
+  background-color: rgba(255,192,192,0);
+  }
+
+#imm ,#nonimm{
+font-weight: 300;
+font-size: 0.9rem;
+color: white !important;
+}
+
+#immFa,#nonimmFa {
+  font-weight: 300 !important;
+  font-size: 0.9rem !important;;
+}
+
+
+.fa-close{
+  color:red !important;
+}
+/********************** VERSION WHITE *************************/
+/*
+.card{
+  background-color: white;
+  border-color: #3d3d3d;
+  border-width: 2px;
+  border-radius: 3%;
+}
+
+.card-header{
+color: #3d3d3d !important;
+text-decoration: none;
+background-color:  white;
+font-family: roboto;
+font-weight: 400;
+font-size:16px;
+margin:0;
+}
+.card-header a{
+  color:  #3d3d3d !important;
+}
+.card-body{
+  background-color: white;
+}
+.card-footer{
+  background-color: white;
+  margin:0;
+
+}
+/********************** VERSION WHITE *************************/
+
+/********************** VERSION 3D3D3D *************************/
+
+.card{
+  background-color: rgba(61,61,61,0.6);
+  border-color: white;
+  border-width: 1px;
+
+}
+.card-header{
+color: white;
+text-decoration: none;
+background-color: transparent;
+font-family: roboto;
+font-weight: 400;
+font-size:16px;
+margin:0;
+}
+.card-header a{
+  color:  white !important;
+}
+.card-body{
+  background-color: rgba(61,61,61,0.5);
+  color:white;
+}
+.card-footer{
+  background-color: rgba(61,61,61,0.5);
+  color:white !important;
+  margin:0;
+
+}
+
+/********************** VERSION 3D3D3D *************************/
+
+.nation {
+font-size: 0.88em;
+margin:2px 0 2px 0;
+}
+
+.questionMark{
+z-index: 1;
+position: absolute;
+right: 2%;
+bottom: 4%;
+border-radius: 60%;
+border-color: black;
+border-width: 2px;
+}
+
+/***************************************/
+
+.modal-body hr {
+  background:  rgba(49,49,49,0.25);
+
+}
+
+#actionButtons {
+  margin-right: 0;
+  width: 100%;
+}
+#myModal {
+    display: none;
+    top: 0px; !important;
+    width: 66%; /* Full width */
+    height: 75%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    margin:auto;
+    background-color: white; /* Black w/ opacity */
+    color :black;
+    align-items: center !important;
+  /*min-height: 100%;*/}
+/*
+
+.modal-body hr
+
+/**************************************************/
+/****************MEDIA QUERIES*********************/
+/**************************************************/
+
+/* Portrait phones and smaller */
+@media (min-width: 0px) and  (max-width: 1023px) {
+
+  h5 {
+    font-size: 0.88em;
+  }
+
+  #legend{
+    display: none !important;
+  }
+.card-title{
+  margin:1px;
+}
+  .nation {
+  font-size: 0.65em;
+  }
+
+  #xsInfoButton{
+    z-index: 1;
+    height: 125px;
+    width: 300px;
+  }
+
+}
+
+
+
+/* Tablet and small laptops */
+@media (min-width: 1024px) and  (max-width: 1680px) {
+
+  hr {
+    margin:8px;
+
+  }
+
+  h5 {
+    font-size: 0.70em;
+  }
+
+  #legend{
+    display: block;
+    position:absolute;
+    z-index: 1;
+    right: 4%;
+    bottom:5%;
+
+  }
+.card-title{
+  margin:1px;
+}
+  .nation {
+  font-size: 0.65em;
+  }
+
+  #xsInfoButton{
+   display: none !important;
+    }
+
+#cardheader{
+  data-toggle:""
+}
+
+#sources{
+font-size:0.50em;
+}
+
+#propulse{
+  font-size:1em;
+}
+
+}
+
+/* Tablet and small laptops */
+@media (min-width: 1680px) {
+
+  h5 {
+    font-size: 0.9em;
+  }
+
+  #legend{
+    display: block;
+    position:absolute;
+    z-index: 1;
+    right: 3%;
+    bottom:5%;
+
+  }
+.card-title{
+  margin:1px;
+}
+  .nation {
+  font-size: 0.66em;
+  }
+
+  #xsInfoButton{
+   display: none !important;
+    }
+
+}
